@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { EmployeeService } from '../../services/employee.service';
 
 @Component({
   selector: 'app-employees',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employees.component.css']
 })
 export class EmployeesComponent implements OnInit {
+  modalRef: BsModalRef;
+  
 
-  constructor() { }
+  constructor(private employeeService: EmployeeService, private modalService: BsModalService) { }
 
   ngOnInit() {
+    
   }
 
 }

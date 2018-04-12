@@ -1,3 +1,22 @@
-<p>
-  employees works!
-</p>
+<h2> List Employee</h2>
+
+<div class="form-row">
+  <div class="form-group col-md-2">
+    <input type="code" class="form-control" id="inputCode" placeholder="Employee Id Number">
+  </div>
+  <div class="form-group col-md-2">
+    <input type="name" class="form-control" id="inputName" placeholder="Employee Name">
+  </div>
+  <div class="form-group col-md-2">
+    <select id="inputState" class="form-control">
+      <option selected>Select Company Name</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="form-group col-md-2">
+    <input type="date" class="form-control" id="inputDate" placeholder="Created Date" [(ngModel)]= "inputDate" >
+  </div>
+  <div class="form-group col-md-2">
+    <input type="createdBy" class="form-control" id="inputName" placeholder="CreatedBy">
+  </div>
+</div>
