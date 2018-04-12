@@ -6,11 +6,13 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 import { AppComponent } from './app.component';
+import { EmployeesComponent } from './page/employee/employees/employees.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmployeesComponent
   ],
   imports: [
     BrowserModule,
